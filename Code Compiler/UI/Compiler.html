@@ -18,11 +18,10 @@
         <div class="control-panel">
             <label for="Languages">Select Language:</label>
             <select id="Languages" class="languages" onchange="changeLanguage()">
-                <option value="c">C</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
                 <option value="cpp">C++</option>
                 <option value="java">Java</option>
-                <option value="python">Python</option>
-                <option value="nodejs">Node.js</option>
             </select>
         </div>
 
@@ -32,6 +31,8 @@
 
         <div class="button-container">
             <button class="btn" onclick="executeCode()">Run</button>
+            <button class="btn" onclick="clearCode()">Clear</button>
+            <button class="btn" onclick="copyCode()">Copy</button>
         </div>
 
         <div class="output-container">
@@ -41,7 +42,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/mode/javascript/javascript.min.js"></script>
-    <script src="compiler.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/mode/python/python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/mode/clike/clike.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-
