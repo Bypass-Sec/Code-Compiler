@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .header {
+    background: #57a958;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .control-panel {
+    background: lightgray;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .languages {
+    padding: 5px;
+    border: 1px solid gray;
+  }
+  
+  .editor-container {
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    margin-top: 10px;
+  }
+  
+  .CodeMirror {
+    height: 100%;
+    border: 1px solid gray;
+  }
+  
+  .button-container {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .btn {
+    background: #57a958;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .output-container {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 10px;
+  }
+  
+  #output {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 2px solid gray;
+    resize: none;
+  }
+  
+  
