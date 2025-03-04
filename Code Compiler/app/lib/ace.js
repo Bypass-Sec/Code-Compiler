@@ -150,3 +150,16 @@ if (typeof Element != "undefined" && !Element.prototype.remove) {
 
 
 });
+define("ace/lib/fixoldbrowsers",["require","exports","module"], function(require, exports, module) {
+"use strict";
+if (typeof Element != "undefined" && !Element.prototype.remove) {
+    Object.defineProperty(Element.prototype, "remove", {
+        enumerable: false,
+        writable: true,
+        configurable: true,
+        value: function() { this.parentNode && this.parentNode.removeChild(this); }
+    });
+}
+
+
+});
